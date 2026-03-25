@@ -1,0 +1,12 @@
+parameters:
+    database:
+        dsn: 'mysql:host=127.0.0.1;dbname=punishment_app;charset=utf8mb4'
+        user: root
+        password: ''
+
+database:
+    dsn: %database.dsn%
+    user: %database.user%
+    password: %database.password%
+    options:
+        lazy: true

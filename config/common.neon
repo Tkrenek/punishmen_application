@@ -1,0 +1,26 @@
+extensions:
+    - Nette\Bridges\ApplicationDI\ApplicationExtension
+    - Nette\Bridges\HttpDI\HttpExtension
+    - Nette\Bridges\HttpDI\SessionExtension
+    - Nette\Bridges\DatabaseDI\DatabaseExtension
+    - Latte\Bridges\DI\LatteExtension
+
+application:
+    errorPresenter: Error
+    mapping:
+        '*': App\Presenters\*Presenter
+
+session:
+    expiration: 7 days
+    autoStart: smart
+
+latte:
+    strictTypes: true
+
+services:
+    # Repositories
+    - App\Model\UserRepository
+    - App\Model\PenaltyTypeRepository
+    - App\Model\PenaltyRepository
+    - App\Model\FundTransactionRepository
+    - App\Model\StatisticsModel

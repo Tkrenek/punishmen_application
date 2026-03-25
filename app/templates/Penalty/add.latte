@@ -1,0 +1,19 @@
+{layout '../@layout.latte'}
+{var $title = 'Přidat pokutu'}
+
+{block content}
+<div class="d-flex align-items-center mb-4">
+    <a n:href="default" class="btn btn-outline-secondary me-3"><i class="bi bi-arrow-left"></i></a>
+    <h1 class="h3 mb-0"><i class="bi bi-plus-circle me-2"></i>Přidat pokutu</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-7 col-lg-5">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                {control penaltyForm}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

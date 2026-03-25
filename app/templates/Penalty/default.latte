@@ -1,0 +1,150 @@
+{layout '../@layout.latte'}
+{var $title = 'Pokuty'}
+
+{block content}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0"><i class="bi bi-list-ul me-2"></i>Pokuty</h1>
+    <a n:href="add" class="btn btn-primary"><i class="bi bi-plus-circle me-1"></i>Přidat pokutu</a>
+</div>
+
+{* === Filtr panel === *}
+<div class="card border-0 shadow-sm mb-3">
+    <div class="card-body py-2">
+        <form method="get" class="row g-2 align-items-end">
+            <div class="col-sm-6 col-md-3 col-xl-2">
+                <label class="form-label form-label-sm mb-1">Uživatel</label>
+                <select name="user_id" class="form-select form-select-sm">
+                    <option value="">— Vše —</option>
+                    {foreach $users as $u}
+                        <option value="{$u->id}" {if $filters['user_id'] == $u->id}selected{/if}>{$u->initials}</option>
+                    {/foreach}
+                </select>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3">
+                <label class="form-label form-label-sm mb-1">Typ pokuty</label>
+                <select name="penalty_type_id" class="form-select form-select-sm">
+                    <option value="">— Vše —</option>
+                    {foreach $penaltyTypes as $pt}
+                        <option value="{$pt->id}" {if $filters['penalty_type_id'] == $pt->id}selected{/if}>{$pt->name}</option>
+                    {/foreach}
+                </select>
+            </div>
+            <div class="col-sm-6 col-md-2 col-xl-2">
+                <label class="form-label form-label-sm mb-1">Zaplaceno</label>
+                <select name="is_paid" class="form-select form-select-sm">
+                    <option value="">— Vše —</option>
+                    <option value="1" {if $filters['is_paid'] === '1'}selected{/if}>Zaplaceno</option>
+                    <option value="0" {if $filters['is_paid'] === '0'}selected{/if}>Nezaplaceno</option>
+                </select>
+            </div>
+            <div class="col-sm-6 col-md-2 col-xl-2">
+                <label class="form-label form-label-sm mb-1">Datum od</label>
+                <input type="date" name="date_from" class="form-control form-control-sm"
+                       value="{$filters['date_from']}">
+            </div>
+            <div class="col-sm-6 col-md-2 col-xl-2">
+                <label class="form-label form-label-sm mb-1">Datum do</label>
+                <input type="date" name="date_to" class="form-control form-control-sm"
+                       value="{$filters['date_to']}">
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-1 d-flex gap-1">
+                <button type="submit" class="btn btn-primary btn-sm flex-fill">
+                    <i class="bi bi-search"></i> Filtr
+                </button>
+                <a n:href="default" class="btn btn-outline-secondary btn-sm" title="Reset filtrů">
+                    <i class="bi bi-x-lg"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{* === Výsledky === *}
+<div class="card border-0 shadow-sm">
+    <div class="card-header bg-transparent d-flex justify-content-between align-items-center py-2">
+        <span class="small text-muted">Nalezeno: <strong>{$total}</strong> pokut</span>
+        <span class="small text-muted">Strana {$page} / {$pageCount ?: 1}</span>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover table-sm mb-0" id="penaltiesTable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Datum</th>
+                        <th>Uživatel</th>
+                        <th>Typ pokuty</th>
+                        <th class="text-end">Částka</th>
+                        <th class="text-center">Zaplaceno</th>
+                        <th>Poznámka</th>
+                        <th class="text-end">Akce</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {foreach $penalties as $p}
+                        <tr class="{if $p->is_paid}table-success opacity-75{/if}">
+                            <td class="text-nowrap">{$p->penalty_date|date:'d.m.Y'}</td>
+                            <td>
+                                <a n:href="default, user_id => $p->user_id" class="badge bg-secondary text-decoration-none">
+                                    {$p->ref('users', 'user_id')->initials}
+                                </a>
+                            </td>
+                            <td class="small">{$p->ref('penalty_types', 'penalty_type_id')->name}</td>
+                            <td class="text-end fw-semibold text-nowrap">{number_format($p->amount, 2, ',', ' ')} Kč</td>
+                            <td class="text-center">
+                                {if $p->is_paid}
+                                    <span class="badge bg-success"><i class="bi bi-check-lg"></i></span>
+                                {else}
+                                    <span class="badge bg-warning text-dark"><i class="bi bi-clock"></i></span>
+                                {/if}
+                            </td>
+                            <td class="small text-muted">{$p->note}</td>
+                            <td class="text-end text-nowrap">
+                                {if !$p->is_paid}
+                                    <a n:href="markPaid, id => $p->id" class="btn btn-sm btn-success py-0 px-1" title="Označit zaplaceno">
+                                        <i class="bi bi-check-lg"></i>
+                                    </a>
+                                {else}
+                                    <a n:href="markUnpaid, id => $p->id" class="btn btn-sm btn-outline-warning py-0 px-1" title="Označit nezaplaceno">
+                                        <i class="bi bi-arrow-counterclockwise"></i>
+                                    </a>
+                                {/if}
+                                <a n:href="delete, id => $p->id" class="btn btn-sm btn-outline-danger py-0 px-1 ms-1"
+                                   onclick="return confirm('Odstranit tuto pokutu?')">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {else}
+                        <tr><td colspan="7" class="text-center text-muted py-4">Žádné pokuty neodpovídají filtrům.</td></tr>
+                    {/foreach}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {* Pagination *}
+    {if $pageCount > 1}
+        <div class="card-footer bg-transparent">
+            <nav>
+                <ul class="pagination pagination-sm mb-0 justify-content-center">
+                    {if $page > 1}
+                        <li class="page-item">
+                            <a class="page-link" n:href="default, page => $page-1, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']">&laquo;</a>
+                        </li>
+                    {/if}
+                    {for $i = max(1, $page-2); $i <= min($pageCount, $page+2); $i++}
+                        <li class="page-item {if $i === $page}active{/if}">
+                            <a class="page-link" n:href="default, page => $i, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']">{$i}</a>
+                        </li>
+                    {/for}
+                    {if $page < $pageCount}
+                        <li class="page-item">
+                            <a class="page-link" n:href="default, page => $page+1, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']">&raquo;</a>
+                        </li>
+                    {/if}
+                </ul>
+            </nav>
+        </div>
+    {/if}
+</div>
+{/block}

@@ -1,0 +1,219 @@
+{layout '../@layout.latte'}
+{var $title = 'Dashboard'}
+
+{block content}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0"><i class="bi bi-speedometer2 me-2"></i>Dashboard</h1>
+</div>
+
+{* === Řádek 1: Souhrnné karty === *}
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm h-100 {if $balance >= 0}bg-success-subtle{else}bg-danger-subtle{/if}">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="text-muted small mb-1">Zůstatek fondu</div>
+                        <div class="fs-3 fw-bold">{number_format($balance, 2, ',', ' ')} Kč</div>
+                    </div>
+                    <i class="bi bi-piggy-bank fs-2 text-success"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="text-muted small mb-1">Celkem pokut</div>
+                        <div class="fs-3 fw-bold">{$summary['total']}</div>
+                    </div>
+                    <i class="bi bi-receipt fs-2 text-primary"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm h-100 {if $summary['unpaid'] > 0}bg-warning-subtle{/if}">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="text-muted small mb-1">Nezaplaceno</div>
+                        <div class="fs-3 fw-bold">{$summary['unpaid']}</div>
+                        <div class="text-muted small">{number_format($summary['unpaid_amount'], 2, ',', ' ')} Kč</div>
+                    </div>
+                    <i class="bi bi-exclamation-circle fs-2 text-warning"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body d-flex align-items-center justify-content-center">
+                <a n:href="Penalty:add" class="btn btn-primary btn-lg w-100">
+                    <i class="bi bi-plus-circle me-2"></i>Přidat pokutu
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{* === Řádek 2: Grafy === *}
+<div class="row g-3 mb-4">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-header bg-transparent fw-semibold">
+                <i class="bi bi-graph-up me-2"></i>Trend pokut — poslední rok
+            </div>
+            <div class="card-body">
+                <canvas id="trendChart" height="80"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-header bg-transparent fw-semibold">
+                <i class="bi bi-pie-chart me-2"></i>Nejčastější typy pokut
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center">
+                <canvas id="typeChart" style="max-height:220px"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+{* === Řádek 3: Top hříšníci + nezaplacené === *}
+<div class="row g-3">
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-transparent fw-semibold">
+                <i class="bi bi-trophy me-2"></i>Top hříšníci
+            </div>
+            <div class="card-body">
+                {if $topOffenders}
+                    {var $maxCount = $topOffenders[0]['count']}
+                    {foreach $topOffenders as $i => $o}
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-secondary me-2" style="min-width:2rem">{$i+1}.</span>
+                            <span class="fw-semibold me-2" style="min-width:3.5rem">{$o['initials']}</span>
+                            <div class="flex-grow-1">
+                                <div class="progress" style="height:20px">
+                                    <div class="progress-bar bg-danger" style="width:{($o['count']/$maxCount*100)|round}%">
+                                        {$o['count']}x
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="ms-2 text-muted small">{number_format($o['total_amount'], 0, ',', ' ')} Kč</span>
+                        </div>
+                    {/foreach}
+                {else}
+                    <p class="text-muted">Žádná data.</p>
+                {/if}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-transparent fw-semibold">
+                <i class="bi bi-exclamation-triangle me-2 text-warning"></i>Nezaplacené pokuty per uživatel
+            </div>
+            <div class="card-body p-0">
+                {if $unpaidByUser}
+                    <table class="table table-sm table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Uživatel</th>
+                                <th class="text-center">Počet</th>
+                                <th class="text-end">Celkem</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {foreach $unpaidByUser as $u}
+                                <tr>
+                                    <td class="fw-semibold">{$u['initials']}</td>
+                                    <td class="text-center">
+                                        <span class="badge bg-warning text-dark">{$u['count']}</span>
+                                    </td>
+                                    <td class="text-end">{number_format($u['total_amount'], 0, ',', ' ')} Kč</td>
+                                    <td>
+                                        <a n:href="Penalty:default, is_paid => 0, user_id => null" class="btn btn-xs btn-outline-secondary btn-sm py-0 px-1">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            {/foreach}
+                        </tbody>
+                    </table>
+                {else}
+                    <p class="text-success p-3 mb-0"><i class="bi bi-check-circle me-2"></i>Vše zaplaceno!</p>
+                {/if}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+
+{block scripts}
+<script>
+(function() {
+    // Trend chart
+    const trendData = {json_encode($monthlyTrend)|noescape};
+    const trendCtx = document.getElementById('trendChart').getContext('2d');
+    new Chart(trendCtx, {
+        type: 'bar',
+        data: {
+            labels: trendData.map(d => d.month),
+            datasets: [{
+                label: 'Počet pokut',
+                data: trendData.map(d => d.count),
+                backgroundColor: 'rgba(220, 53, 69, 0.7)',
+                borderColor: 'rgba(220, 53, 69, 1)',
+                borderWidth: 1,
+                yAxisID: 'y'
+            }, {
+                label: 'Suma (Kč)',
+                data: trendData.map(d => d.total_amount),
+                type: 'line',
+                borderColor: 'rgba(13, 110, 253, 0.8)',
+                backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                fill: true,
+                tension: 0.3,
+                yAxisID: 'y1'
+            }]
+        },
+        options: {
+            responsive: true,
+            interaction: { mode: 'index' },
+            scales: {
+                y:  { beginAtZero: true, title: { display: true, text: 'Počet' } },
+                y1: { beginAtZero: true, position: 'right', title: { display: true, text: 'Kč' }, grid: { drawOnChartArea: false } }
+            }
+        }
+    });
+
+    // Type doughnut chart
+    const typeData = {json_encode($commonTypes)|noescape};
+    const typeCtx = document.getElementById('typeChart').getContext('2d');
+    const shortLabels = typeData.map(d => {
+        const words = d.name.split(' ');
+        return words.slice(0, 3).join(' ') + (words.length > 3 ? '…' : '');
+    });
+    new Chart(typeCtx, {
+        type: 'doughnut',
+        data: {
+            labels: shortLabels,
+            datasets: [{
+                data: typeData.map(d => d.count),
+                backgroundColor: ['#dc3545','#fd7e14','#ffc107','#198754','#0dcaf0','#6f42c1']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } } }
+        }
+    });
+})();
+</script>
+{/block}

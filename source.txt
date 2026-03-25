@@ -1,0 +1,651 @@
+face	Iniciála	Částka	Zaplaceno	Poznámka
+8.9	-	785,00 Kč	1	počáteční stav
+12.9	TP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.9	TP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+13.9	JU	20,00Kč	1	neaktualizovaná planning tabulka při kontrole
+15.9	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.9	TP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.9	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.9	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.9	TCH	20,00 Kč	1	neomluvená účast na daily
+16.9	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.9	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.9	TK	20,00 Kč	1	nepřeplánování úkolů pro česání do deadlinu
+19.9	PS	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+21.9	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.9	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.9	TP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.9	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.9	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.9	TP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.9	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+29.9	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.9	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.9	MH	20,00 Kč	1	neomluvený pozdní příchod
+30.9	MH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+30.9	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+5.10	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+5.10	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+7.10	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.10	TCH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.10	TP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.10	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.10	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.10	MH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+17.10	PSP	20,00 Kč	1	neomluvený pozdní příchod
+20.10	TP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+20.10	MH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+24.10	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+25.10	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.10	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.10	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+31.10	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+31.10	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+1.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+1.11	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+2.11	HK	20,00 Kč	1	neomluvená účast na daily
+7.11	TP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+10.11	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.11	HK	68,00 Kč	1	přebytek z nákupu darů
+14.11	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+15.11	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.11	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.11	MH	20,00 Kč	1	neomluvená účast na daily
+16.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.11	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.11	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.11	MH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+21.11	MH	20,00 Kč	1	neomluvený pozdní příchod
+24.11	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+24.11	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.11	HK	(320,00 Kč)	1	Republika na přípitek
+28.11	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+28.11	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+29.11	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.12	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+6.12	MH	20,00 Kč	1	neomluvený pozdní příchod
+7.12	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+9.12	MH	20,00 Kč	1	neomluvený pozdní příchod
+13.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.12	MH	20,00 Kč	1	neomluvený pozdní příchod
+14.12	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.12	TCH	(220,00 Kč)	1	dárek PV
+15.12	TCH	220,00 Kč	1	dárek PV
+16.12	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.12	MH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.12	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.12	TEAM	(500,00 Kč)	1	výběr za vánoční večírek
+20.12	MH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+20.12	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+9.1	PS	20,00 Kč	1	neomluvený pozdní příchod
+9.1	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+9.1	JU	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+9.1	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+9.1	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+11.1	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.1	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.1	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+18.01	MH	20,00 Kč	1	neomluvený pozdní příchod
+18.01	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.1	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+23.01	MH	20,00 Kč	1	neomluvený pozdní příchod
+23.01	TCH	20,00 Kč	1	neomluvený pozdní příchod
+23.01	TK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+23.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.01	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.01	MH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.01	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.01	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.01	MH	20,00 Kč	1	neomluvený pozdní příchod
+26.01	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.01	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.01	JU	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+30.01	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.01	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+31.01	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.02	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+2.02	MH	20,00 Kč	1	neomluvený pozdní příchod
+3.02	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+6.02	ZM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+09.02	LM	20,00 Kč	1	neomluvený pozdní příchod
+09.02	JU	20,00 Kč	1	neomluvený pozdní příchod
+09.02	MH	20,00 Kč	1	neomluvený pozdní příchod
+13.02	MH	20,00 Kč	1	neomluvený pozdní příchod
+20.02	JU	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+20.02	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+20.02	PSP	20,00 Kč	1	neomluvený pozdní příchod
+21.02	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.02	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.02	JU	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.02	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+27.02	JU	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+28.02	JU	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.02	HK	(390,00 Kč)	1	dárek pro JU
+1.03	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.03	HK	149,00 Kč	1	inventura
+2.03	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.03	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+07.03	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.03	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.03	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.03	LM	20,00 Kč	1	nepřeplánovaný červený sloupec
+20.03	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec
+21.03	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+27.03	MH	- Kč	1	neomluvený pozdní příchod
+27.03	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+27.03	PS	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+29.03	RN	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+29.03	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.03	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+4.04	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+5.04	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.04	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.04	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.04	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+17.04	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.04	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+17.04	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+18.04	TK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+20.04	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+20.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+3.05	TCH	20,00 Kč	1	neomluvená účast na daily
+3.05	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.05	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.05	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.05	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.05	MH	- Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.05	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+12.05	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.05	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+15.05	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+16.05	ZM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.05	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+22.05	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+25.05	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.05	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+29.05	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+30.05	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.05	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.06	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+6.06	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+8.06	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+12.06	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+14.06	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.06	HK	(700,00 Kč)	1	BUMBU na TB
+15.06	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.06	RN	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.06	HK	11,00 Kč	1	zůstatek z nákupu bumbu
+20.06	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.06	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.06	HK	20,00 Kč	1	neomluvený pozdní příchod
+22.06	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.06	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.06	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+28.06	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+29.06	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.06	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.06	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.06	PS	5,00 Kč	1	náhodný nález
+3.07	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+3.07	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+04.07	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.07	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.07	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+10.07	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+11.07	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.07	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.07	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.07	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+17.07	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+17.07	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+17.07	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+18.07	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.07	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+19.07	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.07	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.07	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.07	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.07	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.07	RN	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+9.08	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+9.08	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.08	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+14.08	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+15.08	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.08	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.08	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.09	LM	20,00 Kč	1	neomluvená účast na daily
+1.09	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.09	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.09	TK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+11.09	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+11.09	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+18.09	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+18.09	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+18.09	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.09	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.09	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.09	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.09	ZM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+25.09	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+2.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.10	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+2.10	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+2.10	TK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+06.10	TK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.10	PS	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+16.10	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+2.11	PSP	20,00 Kč	1	neomluvená účast na daily
+6.11	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+9.11	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.11	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.11	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.11	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+28.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.11	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.11	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.12	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+1.12	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.12	TCH	20,00 Kč	1	neomluvený pozdní příchod
+4.12	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.12	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+6.12	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.12	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.12	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.12	HK	46,00 Kč	1	inventura
+14.12	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.12	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.12	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.12	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.12	HK	(2 000,00 Kč)	1	Rumy
+21.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.02	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+5.02	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+16.02	TK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.02	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.02	TCH	20,00 Kč	1	neomluvený pozdní příchod
+22.02	ZM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+23.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.02	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+26.02	PS	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+27.02	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.02	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.02	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+29.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+29.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.03	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+1.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+05.03	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+05.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.03	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.03	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.03	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+13.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.03	HK	(10,00 Kč)	1	Inventura
+18.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.03	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+20.03	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.03	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.03	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.03	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.04	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+2.04	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.04	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.04	TCH	20,00 Kč	1	neomluvený pozdní příchod
+4.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+18.04	TCH	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.04	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.04	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+23.04	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.04	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.04	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.05	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.05	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.05	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.05	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.05	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+17.05	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.05	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.05	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.05	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+23.05	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.05	TCH	20,00 Kč	1	neomluvený pozdní příchod
+4.06	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+6.06	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.06	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.06	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+10.06	PST	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+10.06	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+11.06	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.06	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.06	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.06	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+18.06	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+18.06	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.06	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+1.07	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+3.07	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.07	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.07	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+11.07	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.07	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+19.07	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+19.07	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.07	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.07	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.07	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.07	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.07	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+02.08	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+02.08	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.07	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+8.08	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+8.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.08	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+12.08	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+12.08	VD	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+12.08	TCH	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+12.08	PST	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+12.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.08	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.08	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.08	TCH	20,00 Kč	1	neomluvený pozdní příchod
+19.08	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+19.08	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+19.08	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.08	PST	20,00 Kč	1	neomluvený pozdní příchod
+27.08	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+30.08	ZM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+2.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.09	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.09	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.09	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+13.09	ZM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+13.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.09	VD	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+17.09	TCH	20,00 Kč	1	neomluvený pozdní příchod
+25.09	TCH	20,00 Kč	1	neomluvený pozdní příchod
+26.09	PST	20,00 Kč	1	neomluvený pozdní příchod
+26.09	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+13.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.9	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+30.9	TK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+30.9	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.9	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.10	HK	20,00 Kč	1	neomluvený pozdní příchod
+03.09	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.10	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.10	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+18.10	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+18.10	TCH	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.10	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.10	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+24.10	ZM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.10	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.10	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+29.10	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.11	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+8.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.11	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+18.11	PS	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+20.11	ZM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+22.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.11	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.11	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.11	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.11	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.12	PSP	20,00 Kč	1	neomluvený pozdní příchod
+5.12	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+6.12	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+6.12	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+9.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.12	HK	(1 600,00 Kč)	1	Terč na šipky
+12.12	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.12	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.12	HK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+8.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.01	HK	(80,00 Kč)	1	Hroty šipky
+13.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.01	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.01	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.01	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.01	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+13.01	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+14.01	PS	20,00 Kč	1	neomluvený pozdní příchod
+14.01	TCH	20,00 Kč		neomluvený pozdní příchod
+20.01	HK	(80,00 Kč)	1	Nasadky na šipky
+23.01	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.01	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+6.12	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+27.01	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+27.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+27.01	VD	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+29.01	PSP	20,00 Kč	1	neomluvený pozdní příchod
+29.01	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.01	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+4.02	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.02	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+14.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.02	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.02	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.02	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+21.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.02	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.02	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.02	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.03	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+6.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.03	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.03	TCH	20,00 Kč		neomluvený pozdní příchod
+12.03	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+13.03	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.03	TCH	20,00 Kč		neomluvený pozdní příchod
+17.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.03	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.03	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+24.03	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+27.03	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+27.03	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+27.03	PSP	20,00 Kč	1	neomluvený pozdní příchod
+28.03	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.03	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+31.03	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.04	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+3.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.04	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+7.04	PST	20,00 Kč	1	neomluvený pozdní příchod
+7.04	TK	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+14.04	PST	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+16.04	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.04	PSP	20,00 Kč	1	neomluvený pozdní příchod
+16.04	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.04	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+22.04	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+9.05	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+9.05	VD	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+9.05	TCH	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+12.05	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+14.05	TCH	20,00 Kč		neomluvený pozdní příchod
+19.05	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.05	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+26.05	TCH	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+27.05	TCH	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+28.05	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+28.05	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+2.06	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+2.06	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.06	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+5.06	HK	(180,00 Kč)	1	ZONky od PS
+6.06	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.06	HK	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.06	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+12.06	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.06	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+24.06	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+24.06	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+25.06	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.06	HK	(540,00 Kč)	1	TB - nákup nanuků a občerstvení
+27.06	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+27.06	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.06	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+30.06	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+27.06	RL	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+9.07	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.07	HK	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.07	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.07	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.07	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.07	TCH	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+21.07	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+28.07	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.08	TK	(2 250,00 Kč)	1	rumy pro HK a PST
+6.08	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+13.08	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.08	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+15.08	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+18.08	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+20.08	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+21.08	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.08	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+25.08	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.09	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+1.09	PS	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+1.09	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+3.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+4.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.09	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.09	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+8.09	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+19.09	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+19.09	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.09	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+19.09	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+23.09	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+30.09	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+30.09	RL	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+7.10	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.10	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+16.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+17.10	TK	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+20.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+29.10	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+31.10	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.11	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.11	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.11	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+10.11	PS	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+11.11	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+14.11	PSP	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+14.11	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+21.11	RL	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.11	PSP	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.11	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.11	VD	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+24.11	PSP	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+24.11	VD	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+3.12	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+9.12	PSP	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+10.12	PS	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+10.12	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+11.12		(1 605,00 Kč)	1	Bowling
+12.12	RN	229,00 Kč	1	Doplatek za bowling
+15.12	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+15.12	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+15.12	TCH	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+18.12	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+18.12	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+8.01	TK	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+9.01	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+15.01	PSP	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+15.01	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+15.01	PSP	20,00 Kč		neomluvený pozdní příchod
+16.01	PS	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+19.01	PSP	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+22.01	RL	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+22.01	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+23.01	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+23.01	RL	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+28.01	PSP	20,00 Kč		neomluvený pozdní příchod
+28.01	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+2.02	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+2.02	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+2.02	TK	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+2.02	PS	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+10.02	PSP	20,00 Kč		neomluvený pozdní příchod
+10.02	PSP	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+11.02	PS	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+11.02	VD	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+11.02	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+16.02	PS	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+16.02	RL	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+16.02	RL	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+19.02	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+20.02	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+23.02	PS	20,00 Kč		nepřeplánovaný červený sloupec při kontrole
+24.02	PS	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+24.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.02	PS	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+26.02	PSP	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+26.02	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+26.02	PSP	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+2.03	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+2.03	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+2.03	VD	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+4.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+5.03	LM	20,00 Kč	1	chybějící výkazy vzhledem k docházce při kontrole
+5.03	PS	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+5.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+6.03	TK	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+6.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+6.03	ZM	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+9.03	LM	20,00 Kč	1	neaktualizovaná planning tabulka při kontrole
+16.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+16.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+19.02	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+19.02	RL	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+20.02	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+23.02	LM	20,00 Kč	1	nepřeplánovaný červený sloupec při kontrole
+23.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+23.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+23.03	ZM	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+25.03	PSP	20,00 Kč		neaktualizovaná planning tabulka při kontrole
+25.03	PSP	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+25.03	VD	20,00 Kč		chybějící výkazy vzhledem k docházce při kontrole
+25.03	VD	20,00 Kč		neomluvený pozdní příchod

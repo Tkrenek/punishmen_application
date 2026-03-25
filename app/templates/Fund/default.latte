@@ -1,0 +1,101 @@
+{layout '../@layout.latte'}
+{var $title = 'Fond'}
+
+{block content}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0"><i class="bi bi-piggy-bank me-2"></i>Fond — speciální transakce</h1>
+</div>
+
+{* Souhrn fondu *}
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-lg-4">
+        <div class="card border-0 shadow-sm bg-success-subtle">
+            <div class="card-body">
+                <div class="text-muted small">Bonusy do kasy (celkem)</div>
+                <div class="fs-4 fw-bold text-success">{number_format($totalBonuses, 2, ',', ' ')} Kč</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+        <div class="card border-0 shadow-sm bg-danger-subtle">
+            <div class="card-body">
+                <div class="text-muted small">Výdaje z fondu (celkem)</div>
+                <div class="fs-4 fw-bold text-danger">{number_format($totalWithdrawals, 2, ',', ' ')} Kč</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 d-flex align-items-center">
+        <button class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#addFundForm">
+            <i class="bi bi-plus-circle me-1"></i>Přidat transakci
+        </button>
+    </div>
+</div>
+
+{* Formulář (schovaný ve výchozím stavu) *}
+<div class="collapse mb-4" id="addFundForm">
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-transparent fw-semibold">Nová transakce</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-7 col-lg-5">
+                    {control fundForm}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{* Tabulka transakcí *}
+<div class="card border-0 shadow-sm">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover table-sm mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Datum</th>
+                        <th>Typ</th>
+                        <th>Uživatel</th>
+                        <th>Popis</th>
+                        <th class="text-end">Částka</th>
+                        <th class="text-end">Akce</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {foreach $transactions as $tx}
+                        <tr class="{if $tx->transaction_type === 'bonus'}table-success{else}table-danger{/if} bg-opacity-25">
+                            <td class="text-nowrap">{$tx->entry_date|date:'d.m.Y'}</td>
+                            <td>
+                                {if $tx->transaction_type === 'bonus'}
+                                    <span class="badge bg-success"><i class="bi bi-arrow-up"></i> Bonus</span>
+                                {else}
+                                    <span class="badge bg-danger"><i class="bi bi-arrow-down"></i> Výdaj</span>
+                                {/if}
+                            </td>
+                            <td>
+                                {if $tx->user_id}
+                                    <span class="badge bg-secondary">{$tx->ref('users', 'user_id')->initials}</span>
+                                {else}
+                                    <span class="text-muted small">—</span>
+                                {/if}
+                            </td>
+                            <td>{$tx->description}</td>
+                            <td class="text-end fw-semibold text-nowrap
+                                {if $tx->transaction_type === 'bonus'}text-success{else}text-danger{/if}">
+                                {if $tx->transaction_type === 'withdrawal'}−{/if}{number_format($tx->amount, 2, ',', ' ')} Kč
+                            </td>
+                            <td class="text-end">
+                                <a n:href="delete, id => $tx->id" class="btn btn-sm btn-outline-danger py-0 px-1"
+                                   onclick="return confirm('Odstranit tuto transakci?')">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {else}
+                        <tr><td colspan="6" class="text-center text-muted py-4">Žádné transakce.</td></tr>
+                    {/foreach}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{/block}

@@ -1,0 +1,52 @@
+{layout '../@layout.latte'}
+{var $title = 'Typy pokut'}
+
+{block content}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0"><i class="bi bi-tags me-2"></i>Typy pokut</h1>
+    <a n:href="add" class="btn btn-primary"><i class="bi bi-plus-circle me-1"></i>Přidat typ</a>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th>Název</th>
+                    <th class="text-end">Výchozí částka</th>
+                    <th class="text-center">Stav</th>
+                    <th class="text-end">Akce</th>
+                </tr>
+            </thead>
+            <tbody>
+                {foreach $penaltyTypes as $pt}
+                    <tr class="{if !$pt->is_active}table-secondary text-muted{/if}">
+                        <td>{$pt->name}</td>
+                        <td class="text-end">{number_format($pt->default_amount, 2, ',', ' ')} Kč</td>
+                        <td class="text-center">
+                            {if $pt->is_active}
+                                <span class="badge bg-success">Aktivní</span>
+                            {else}
+                                <span class="badge bg-secondary">Neaktivní</span>
+                            {/if}
+                        </td>
+                        <td class="text-end">
+                            <a n:href="edit, id => $pt->id" class="btn btn-sm btn-outline-primary me-1">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            {if $pt->is_active}
+                                <a n:href="delete, id => $pt->id" class="btn btn-sm btn-outline-danger"
+                                   onclick="return confirm('Deaktivovat typ pokuty?')">
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            {/if}
+                        </td>
+                    </tr>
+                {else}
+                    <tr><td colspan="4" class="text-center text-muted py-4">Žádné typy pokut.</td></tr>
+                {/foreach}
+            </tbody>
+        </table>
+    </div>
+</div>
+{/block}

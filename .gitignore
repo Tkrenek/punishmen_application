@@ -1,0 +1,21 @@
+# Vendor a závislosti
+/vendor/
+
+# Nette dočasné soubory
+/temp/
+/log/
+
+# Lokální konfigurace (obsahuje DB credentials)
+/config/local.neon
+
+# OS soubory
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# PHP
+*.log
