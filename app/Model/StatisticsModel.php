@@ -62,6 +62,7 @@ class StatisticsModel
 
         return array_map(fn($r) => [
             'id'           => $r->id,
+            'id'           => (int) $r->id,
             'initials'     => $r->initials,
             'name'         => $r->name,
             'count'        => (int) $r->cnt,
@@ -121,7 +122,7 @@ class StatisticsModel
     public function getUnpaidByUser(): array
     {
         $rows = $this->database->query(
-            'SELECT u.initials, u.name,
+            'SELECT u.id, u.initials, u.name,
                     COUNT(p.id) AS cnt,
                     SUM(p.amount) AS total_amount
              FROM penalties p
@@ -132,6 +133,7 @@ class StatisticsModel
         )->fetchAll();
 
         return array_map(fn($r) => [
+            'id'           => (int) $r->id,
             'initials'     => $r->initials,
             'name'         => $r->name,
             'count'        => (int) $r->cnt,

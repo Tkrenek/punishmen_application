@@ -138,7 +138,7 @@
                                     </td>
                                     <td class="text-end">{number_format($u['total_amount'], 0, ',', ' ')} Kč</td>
                                     <td>
-                                        <a n:href="Penalty:default, is_paid => 0, user_id => null" class="btn btn-xs btn-outline-secondary btn-sm py-0 px-1">
+                                        <a n:href="Penalty:default, is_paid => 0, user_id => $u['id']" class="btn btn-xs btn-outline-secondary btn-sm py-0 px-1">
                                             <i class="bi bi-eye"></i>
                                         </a>
                                     </td>

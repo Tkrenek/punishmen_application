@@ -141,8 +141,17 @@
                 <ul class="pagination pagination-sm mb-0 justify-content-center">
                     {if $page > 1}
                         <li class="page-item">
+                            <a class="page-link" n:href="default, page => 1, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']" title="První stránka">&laquo;&laquo;</a>
+                        </li>
+                    {else}
+                        <li class="page-item disabled"><span class="page-link">&laquo;&laquo;</span></li>
+                    {/if}
+                    {if $page > 1}
+                        <li class="page-item">
                             <a class="page-link" n:href="default, page => $page-1, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']">&laquo;</a>
                         </li>
+                    {else}
+                        <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
                     {/if}
                     {for $i = max(1, $page-2); $i <= min($pageCount, $page+2); $i++}
                         <li class="page-item {if $i === $page}active{/if}">
@@ -153,6 +162,15 @@
                         <li class="page-item">
                             <a class="page-link" n:href="default, page => $page+1, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']">&raquo;</a>
                         </li>
+                    {else}
+                        <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+                    {/if}
+                    {if $page < $pageCount}
+                        <li class="page-item">
+                            <a class="page-link" n:href="default, page => $pageCount, user_id => $filters['user_id'], penalty_type_id => $filters['penalty_type_id'], is_paid => $filters['is_paid'], date_from => $filters['date_from'], date_to => $filters['date_to']" title="Poslední stránka">&raquo;&raquo;</a>
+                        </li>
+                    {else}
+                        <li class="page-item disabled"><span class="page-link">&raquo;&raquo;</span></li>
                     {/if}
                 </ul>
             </nav>
