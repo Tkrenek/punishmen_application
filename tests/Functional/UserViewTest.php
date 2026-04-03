@@ -10,12 +10,12 @@ use Tester\Assert;
 
 class UserViewTest extends \Tests\DbTestCase
 {
-    private UserRepository $repo;
+    private UserRepository $users;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->repo = $this->container->getByType(UserRepository::class);
+        $this->users = $this->container->getByType(UserRepository::class);
     }
 
     public function testUserPresenter_canBeCreated(): void
@@ -25,18 +25,58 @@ class UserViewTest extends \Tests\DbTestCase
         Assert::type(UserPresenter::class, $presenter);
     }
 
-    public function testUserList_containsInsertedUser(): void
+    public function testUserCreation_andRetrieval(): void
     {
-        $user = $this->repo->insert(['initials' => 'VU1', 'name' => 'View User', 'is_active' => 1]);
-        $initials = array_map(fn($u) => $u->initials, $this->repo->findAll()->fetchAll());
-        Assert::contains('VU1', $initials);
+        $row = $this->users->insert(['initials' => 'UV1', 'is_active' => 1]);
+        $found = $this->users->findById((int) $row->id);
+        Assert::equal('UV1', $found->initials);
     }
 
-    public function testAddUser_thenEditUser(): void
+    public function testUserList_containsInserted(): void
     {
-        $user = $this->repo->insert(['initials' => 'VU2', 'name' => 'Initial Name', 'is_active' => 1]);
-        $this->repo->update($user->id, ['name' => 'Edited Name']);
-        Assert::same('Edited Name', $this->repo->findById($user->id)->name);
+        $this->users->insert(['initials' => 'UV2', 'is_active' => 1]);
+        $all = $this->users->findAll()->fetchAll();
+        $initials = array_map(fn($u) => $u->initials, $all);
+        Assert::contains('UV2', $initials);
+    }
+
+    public function testUserUpdate_changesInitials(): void
+    {
+        $row = $this->users->insert(['initials' => 'OLD', 'is_active' => 1]);
+        $id = (int) $row->id;
+        $this->users->update($id, ['initials' => 'NEW']);
+        $updated = $this->users->findById($id);
+        Assert::equal('NEW', $updated->initials);
+    }
+
+    public function testUserDelete_softDeletesRecord(): void
+    {
+        $row = $this->users->insert(['initials' => 'DEL', 'is_active' => 1]);
+        $id = (int) $row->id;
+        $this->users->delete($id);
+        // delete() je soft delete - nastavi is_active = 0, zaznam zustavaa
+        $found = $this->users->findById($id);
+        Assert::notNull($found);
+        Assert::equal(0, (int) $found->is_active);
+    }
+
+    /**
+     * Template pouziva {foreach $users as $u} (ne $user) aby nedoslo
+     * ke konfliktu s automaticky injektovanou promennou $user (Nette Security\User).
+     * Tento test verifikuje ze UserRepository vraci iterable data.
+     */
+    public function testUserList_noDuplicateVariableConflict(): void
+    {
+        $this->users->insert(['initials' => 'UVA', 'is_active' => 1]);
+        $this->users->insert(['initials' => 'UVB', 'is_active' => 0]);
+        $allUsers = $this->users->findAll()->fetchAll();
+        // foreach $users as $u - promennou $u pouziva template, NE $user
+        $initials = [];
+        foreach ($allUsers as $u) {
+            $initials[] = $u->initials;
+        }
+        Assert::contains('UVA', $initials);
+        Assert::contains('UVB', $initials);
     }
 }
 

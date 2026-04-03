@@ -23,18 +23,18 @@ class PenaltyPresenter extends BasePresenter
     }
 
     public function renderDefault(
-        ?int    $user_id = null,
-        ?int    $penalty_type_id = null,
+        ?string $user_id = null,
+        ?string $penalty_type_id = null,
         ?string $is_paid = null,
         ?string $date_from = null,
         ?string $date_to = null,
     ): void {
         $filters = [
-            'user_id'         => $user_id,
-            'penalty_type_id' => $penalty_type_id,
-            'is_paid'         => $is_paid,
-            'date_from'       => $date_from,
-            'date_to'         => $date_to,
+            'user_id'         => ($user_id !== null && $user_id !== '') ? (int) $user_id : null,
+            'penalty_type_id' => ($penalty_type_id !== null && $penalty_type_id !== '') ? (int) $penalty_type_id : null,
+            'is_paid'         => ($is_paid !== null && $is_paid !== '') ? $is_paid : null,
+            'date_from'       => ($date_from !== null && $date_from !== '') ? $date_from : null,
+            'date_to'         => ($date_to !== null && $date_to !== '') ? $date_to : null,
         ];
 
         $query = $this->penalties->findFiltered($filters);
