@@ -82,6 +82,36 @@ class PenaltyViewTest extends \Tests\DbTestCase
         Assert::contains((int) $paid->id, $ids);
         Assert::notContains((int) $unpaid->id, $ids);
     }
+
+    /** sumFiltered vrati spravnou celkovou sumu pro dany filtr. */
+    public function testPenaltySum_filteredByUser_returnsCorrectTotal(): void
+    {
+        $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 100.0, 'penalty_date' => '2025-10-01', 'is_paid' => 0]);
+        $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 50.0,  'penalty_date' => '2025-10-02', 'is_paid' => 1]);
+        $sum = $this->penalties->sumFiltered(['user_id' => $this->userId]);
+        // Muze obsahovat zaznamy z jinych testu, ale alespon 150 Kc od tohoto testu
+        Assert::true($sum >= 150.0, "Ocekavana suma >= 150, dostali jsme: $sum");
+    }
+
+    /** sumFiltered bez filtru vrati sumu vsech pokut (nenulova po insertu). */
+    public function testPenaltySum_noFilter_returnsNonZero(): void
+    {
+        $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 75.0, 'penalty_date' => '2025-10-03', 'is_paid' => 0]);
+        $sum = $this->penalties->sumFiltered([]);
+        Assert::true($sum > 0.0, "Suma vsech pokut by mela byt nenulova");
+    }
+
+    /** sumFiltered s filtrem is_paid=1 vrati pouze sumu zaplacenych. */
+    public function testPenaltySum_onlyPaid_excludesUnpaid(): void
+    {
+        $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 200.0, 'penalty_date' => '2025-10-04', 'is_paid' => 1]);
+        $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 999.0, 'penalty_date' => '2025-10-05', 'is_paid' => 0]);
+        $paidSum = $this->penalties->sumFiltered(['user_id' => $this->userId, 'is_paid' => '1']);
+        $unpaidSum = $this->penalties->sumFiltered(['user_id' => $this->userId, 'is_paid' => '0']);
+        Assert::true($paidSum >= 200.0);
+        Assert::true($unpaidSum >= 999.0);
+        Assert::true($paidSum !== $unpaidSum);
+    }
 }
 
 (new PenaltyViewTest())->run();

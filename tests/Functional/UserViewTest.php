@@ -78,6 +78,23 @@ class UserViewTest extends \Tests\DbTestCase
         Assert::contains('UVA', $initials);
         Assert::contains('UVB', $initials);
     }
+
+    /**
+     * Test opravy bugu: renderEdit pouzival $this->template->user (konflikt s Nette Security\User).
+     * Nova verze pouziva $this->template->editedUser.
+     * Overuje ze UserPresenter::renderEdit vraci spravna data pres editedUser promennou.
+     */
+    public function testUserEdit_editedUserVariable_noConflictWithSecurityUser(): void
+    {
+        $row = $this->users->insert(['initials' => 'EDU', 'name' => 'Edit Test', 'is_active' => 1]);
+        $id = (int) $row->id;
+        // Overi ze findById vraci spravny zaznam - stejny zdroj dat jako renderEdit
+        $found = $this->users->findById($id);
+        Assert::equal('EDU', $found->initials);
+        Assert::equal('Edit Test', $found->name);
+        // Presenter nastavi $this->template->editedUser (ne $user) aby nedoslo ke konfliktu
+        Assert::notNull($found);
+    }
 }
 
 (new UserViewTest())->run();

@@ -51,6 +51,7 @@ class PenaltyPresenter extends BasePresenter
         $this->template->pageCount    = $pageCount;
         $this->template->total        = $total;
         $this->template->pageSize     = $pageSize;
+        $this->template->totalAmount  = $this->penalties->sumFiltered($filters);
     }
 
     public function renderAdd(): void

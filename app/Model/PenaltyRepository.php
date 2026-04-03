@@ -64,6 +64,15 @@ class PenaltyRepository
         return $query;
     }
 
+    /**
+     * Vrátí součet `amount` pro filtrované pokuty (respektuje stejné filtry jako findFiltered).
+     */
+    public function sumFiltered(array $filters = []): float
+    {
+        $query = $this->findFiltered($filters);
+        return (float) $query->sum('amount');
+    }
+
     public function insert(array $data): ActiveRow
     {
         return $this->database->table('penalties')->insert($data);

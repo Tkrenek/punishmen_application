@@ -35,7 +35,7 @@ class UserPresenter extends BasePresenter
             'initials' => $user->initials,
             'name'     => $user->name,
         ]);
-        $this->template->user = $user;
+        $this->template->editedUser = $user;
     }
 
     public function actionDelete(int $id): void

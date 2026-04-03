@@ -61,9 +61,15 @@
 
 {* === Výsledky === *}
 <div class="card border-0 shadow-sm">
-    <div class="card-header bg-transparent d-flex justify-content-between align-items-center py-2">
-        <span class="small text-muted">Nalezeno: <strong>{$total}</strong> pokut</span>
-        <span class="small text-muted">Strana {$page} / {$pageCount ?: 1}</span>
+    <div class="card-header bg-transparent py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="small text-muted">Nalezeno: <strong>{$total}</strong> pokut</span>
+            <span class="small text-muted">Strana {$page} / {$pageCount ?: 1}</span>
+        </div>
+        <div class="mt-1 d-flex align-items-center gap-2">
+            <span class="small text-muted">Celková suma:</span>
+            <strong class="text-primary fs-6">{number_format($totalAmount, 2, ',', ' ')} Kč</strong>
+        </div>
     </div>
     <div class="card-body p-0">
         <div class="table-responsive">
