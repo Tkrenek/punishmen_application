@@ -12,6 +12,9 @@ Přehledová stránka se souhrnnou statistikou a grafy.
 | Top 5 hříšníků | Bar chart (Chart.js) — uživatelé s nejvíce pokutami |
 | Pokuty po měsících | Line chart (Chart.js) — vývoj počtu pokut v čase |
 
+> Tlačítko 👁 u každého uživatele (Nezaplacené pokuty per uživatel) přesměruje na výpis pokut s předvybraným filtrem daného uživatele a stavem 
+ezaplaceno.
+
 ---
 
 ## 2. Evidence pokut (`/penalty`)
@@ -27,7 +30,7 @@ Hlavní modul aplikace pro správu pokut.
 > Filtry se **zachovávají** při všech akcích (označit zaplaceno/nezaplaceno). Po kliknutí na akci se stránka vrátí se stejnými filtry.
 
 ### Výpis
-- **Stránkování**: 25 pokut na stránku
+- **Stránkování**: 25 pokut na stránku — navigace: první ««, předchozí «, čísla stránek ±2, další », poslední »»
 - **Celková suma** vyfiltrovaných pokut (zobrazena pod tabulkou)
 - **Počet nezaplacených** pokut ve výpisu (zobrazeno vedle tlačítka hromadné platby)
 

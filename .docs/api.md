@@ -41,7 +41,7 @@ Router: `/<presenter>/<action>[/<id>]`
 - `$filters` — array aktívních filtrů
 - `$totalAmount` — float, suma vyfiltrovaných pokut
 - `$unpaidCount` — int, počet nezaplacených ve výběru
-- `$paginator` — Paginator (25 pokut/stránka)
+- `$paginator` — Paginator (25 pokut/stránka) — navigace: první «« / poslední »» + předchozí/další + čísla stránek ±2
 - `$users` — seznam uživatelů pro select
 - `$penaltyTypes` — seznam typů pro select
 
