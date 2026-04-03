@@ -95,6 +95,26 @@ class UserViewTest extends \Tests\DbTestCase
         // Presenter nastavi $this->template->editedUser (ne $user) aby nedoslo ke konfliktu
         Assert::notNull($found);
     }
+
+    /**
+     * Test prepinani is_active primo z editacni stranky.
+     * actionDelete i actionRestore podporuji parametr $back='edit' pro presmerovani zpet na edit.
+     */
+    public function testUserToggleActive_fromEdit_softDeleteAndRestore(): void
+    {
+        $row = $this->users->insert(['initials' => 'TGL', 'is_active' => 1]);
+        $id = (int) $row->id;
+
+        // Deaktivace (soft delete)
+        $this->users->delete($id);
+        $deactivated = $this->users->findById($id);
+        Assert::equal(0, (int) $deactivated->is_active);
+
+        // Obnoveni
+        $this->users->restore($id);
+        $restored = $this->users->findById($id);
+        Assert::equal(1, (int) $restored->is_active);
+    }
 }
 
 (new UserViewTest())->run();

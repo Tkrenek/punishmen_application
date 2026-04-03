@@ -38,7 +38,7 @@ class UserPresenter extends BasePresenter
         $this->template->editedUser = $user;
     }
 
-    public function actionDelete(int $id): void
+    public function actionDelete(int $id, string $back = 'default'): void
     {
         $user = $this->users->findById($id);
         if (!$user) {
@@ -46,10 +46,10 @@ class UserPresenter extends BasePresenter
         }
         $this->users->delete($id);
         $this->flashMessage('Uživatel byl deaktivován.', 'success');
-        $this->redirect('default');
+        $this->redirect($back === 'edit' ? 'edit' : 'default', $back === 'edit' ? ['id' => $id] : []);
     }
 
-    public function actionRestore(int $id): void
+    public function actionRestore(int $id, string $back = 'default'): void
     {
         $user = $this->users->findById($id);
         if (!$user) {
@@ -57,7 +57,7 @@ class UserPresenter extends BasePresenter
         }
         $this->users->restore($id);
         $this->flashMessage('Uživatel byl obnoven.', 'success');
-        $this->redirect('default');
+        $this->redirect($back === 'edit' ? 'edit' : 'default', $back === 'edit' ? ['id' => $id] : []);
     }
 
     protected function createComponentUserForm(): Form
