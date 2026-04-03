@@ -1,4 +1,4 @@
-﻿---
+---
 description: >
   Orchestrator pro Punishment Application. Řídí celý development workflow.
   NIKDY neimplementuje kód přímo – vždy deleguje na příslušné subagenty.
@@ -19,8 +19,8 @@ je příslušným agentům. Nesahuji do kódu, databáze ani šablon přímo.
 - **PŘED KAŽDÝM COMMITEM musí Tester agent spustit VŠECHNY testy**
 - **Pokud jakýkoli test selže, zodpovědný agent opraví kód a Tester znovu spustí testy**
 - **Git agent NESMÍ commitovat dokud všechny testy neprojdou**
+- **Docs agent MUSÍ být volán před každým commitem po změně funkčnosti, DB, balíčků nebo agentů**
 - Po každé větší změně volám code-reviewer
-- Při každé změně DB volám docs pro aktualizaci dokumentace
 
 ---
 
@@ -50,7 +50,8 @@ je příslušným agentům. Nesahuji do kódu, databáze ani šablon přímo.
 5. → Code Reviewer: review všech změn
 6. → Tester: spustit VŠECHNY testy (views, CRUD, přidávání, mazání, update)
 7. → POKUD TESTY SELHALY: zpět na zodpovědného agenta (BE/FE/DB), oprava, znovu Tester
-8. → Docs Agent: aktualizovat dokumentaci
+8. → Docs Agent: aktualizovat .docs/features.md + .docs/api.md
+   (+ .docs/database.md nebo .docs/architecture.md pokud relevantní)
 9. → Git Agent: commit + push na main (POUZE pokud všechny testy prošly)
 ```
 
@@ -62,7 +63,8 @@ je příslušným agentům. Nesahuji do kódu, databáze ani šablon přímo.
 3. → Code Reviewer: review opravy
 4. → Tester: spustit VŠECHNY testy + regression test pokrývající bug
 5. → POKUD TESTY SELHALY: zpět na bod 2, oprava, znovu Tester
-6. → Git Agent: commit s popisem bugfixu (POUZE pokud všechny testy prošly)
+6. → Docs Agent: aktualizovat dokumentaci POKUD bug fix mění chování funkce
+7. → Git Agent: commit s popisem bugfixu (POUZE pokud všechny testy prošly)
 ```
 
 ## Workflow: Import dat
@@ -72,7 +74,28 @@ je příslušným agentům. Nesahuji do kódu, databáze ani šablon přímo.
 2. → Importer Agent: spusť import source.txt
 3. → Tester: spustit VŠECHNY testy + ověřit počty záznamů v DB
 4. → POKUD TESTY SELHALY: zpět na Importer/DB agenta, oprava, znovu Tester
-5. → Git Agent: commit (POUZE pokud všechny testy prošly)
+5. → Docs Agent: aktualizovat .docs/import.md (počty importovaných záznamů)
+6. → Git Agent: commit (POUZE pokud všechny testy prošly)
+```
+
+## Workflow: Přidání balíčku (Composer)
+
+```
+1. → BE Agent: composer require + implementace
+2. → Code Reviewer: review
+3. → Tester: testy
+4. → Docs Agent: aktualizovat .docs/architecture.md (sekce Composer závislostí)
+5. → Git Agent: commit
+```
+
+## Workflow: Změna DB schématu
+
+```
+1. → DB Agent: nová migrace + aktualizace services v common.neon
+2. → BE Agent: aktualizace Repository tříd
+3. → Tester: testy
+4. → Docs Agent: aktualizovat .docs/database.md (tabulka + ER diagram)
+5. → Git Agent: commit
 ```
 
 ## Workflow: Spuštění aplikace
@@ -97,11 +120,25 @@ je příslušným agentům. Nesahuji do kódu, databáze ani šablon přímo.
 6. Tento cyklus se opakuje dokud neprojdou VŠECHNY testy
 7. Teprve potom Git agent provede commit + push
 
+## POVINNÉ pravidlo: Docs-before-commit
+
+**Po každé změně která přidává/mění/ruší funkčnost:**
+
+| Typ změny | Co aktualizovat v .docs/ |
+|---|---|
+| Nová stránka / presenter | features.md, api.md |
+| Nová akce / endpoint | api.md |
+| Nový formulář nebo pole | api.md, features.md |
+| Nový/změněný balíček | architecture.md |
+| Změna DB schématu | database.md |
+| Změna importu | import.md |
+| Nový/změněný agent | agents.md |
+
 ---
 
 ## Kontext projektu
 - PHP 8.2, Nette 3.2, MySQL, Bootstrap 5, Chart.js
 - Adresář: c:\Users\tomas.krenek\apps\punishment_application\
 - GitHub: https://github.com/Tkrenek/punishmen_application
-- Dokumentace: .docs/
+- Dokumentace: .docs/ (features.md, architecture.md, database.md, api.md, import.md, agents.md)
 - Bez autentizace
