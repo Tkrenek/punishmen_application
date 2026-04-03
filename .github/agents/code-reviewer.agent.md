@@ -59,3 +59,9 @@ ZÁVAŽNOST: HIGH / MEDIUM / LOW
 PROBLÉM: ...
 OPRAVA: ...
 ```
+
+## POVINNE: Test-before-commit
+- Pri review overit, ze VSECHNY testy prochazi
+- Zkontrolovat ze existuji testy pro nove/zmenene funkce
+- Pokud chybi testy, pozadovat jejich vytvoreni pred commitem
+- Review je kompletni az kdyz vsechny testy projdou

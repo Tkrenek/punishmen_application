@@ -109,3 +109,9 @@ mysql -u root -p punishment_app < db/migrations/001_initial_schema.sql
 mysql -u root -p punishment_app < db/migrations/002_seed_users.sql
 mysql -u root -p punishment_app < db/migrations/003_seed_penalty_types.sql
 ```
+
+## POVINNE: Test-before-commit
+- Po KAZDE zmene DB schematu musi Tester agent spustit VSECHNY testy
+- Pokud jakykoli test selze kvuli me zmene, MUSIM opravit migraci/schema
+- Tester znovu spusti testy po oprave
+- Commit se kona POUZE pokud VSECHNY testy projdou

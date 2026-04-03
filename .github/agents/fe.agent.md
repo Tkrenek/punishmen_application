@@ -87,3 +87,10 @@ Widgety (Bootstrap cards):
 
 ## Ikony
 Používat Bootstrap Icons (CDN): https://icons.getbootstrap.com/
+
+## POVINNÉ: Test-before-commit
+- Po KAŽDÉ implementaci (nová šablona, oprava UI, nový formulář) musí Tester agent spustit VŠECHNY testy
+- Pokud jakýkoli test selže kvůli mojí změně, MUSÍM opravit kód/šablony
+- Tester znovu spustí testy po opravě
+- Commit se koná POUZE pokud VŠECHNY testy projdou
+- Nikdy neoznačovat práci jako dokončenou bez úspěšných testů

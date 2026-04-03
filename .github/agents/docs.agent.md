@@ -65,3 +65,8 @@ README.md            — v kořeni projektu, stručný přehled
 ## Spuštění
 Docs agent je volán orchestratorem ve fázi 4 nebo kdykoli dojde ke změně,
 která ovlivňuje dokumentaci.
+
+## POVINNE: Test-before-commit
+- Dokumentace se commituje spolecne s kodem
+- Pred commitem musi Tester agent potvrdit ze VSECHNY testy prochazi
+- Commit se kona POUZE pokud VSECHNY testy projdou

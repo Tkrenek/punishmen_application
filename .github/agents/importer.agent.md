@@ -36,8 +36,8 @@ Příklady:
 
 ### Datum
 - Formát: `D.M` nebo `DD.MM` (bez roku)
-- Rok začíná **2023** (září)
-- Rok inkrementovat `+1` pokud nový měsíc < předchozí měsíc - 3
+- Rok se určuje **pozpátku**: načti všechny řádky, přiřazuj roku procházením od konce
+- Poslední záznamy = rok **2026**, každý přechod přes prosinec (= měsíc stoupne při průchodu zpětně) sníží rok o 1
 - Výsledek: `DATE` ve formátu `YYYY-MM-DD`
 
 ### Částka
@@ -95,3 +95,9 @@ Příklady:
 cd c:\Users\tomas.krenek\apps\punishment_application
 php db/import/import_source.php
 ```
+
+## POVINNE: Test-before-commit
+- Po KAZDEM importu musi Tester agent spustit VSECHNY testy
+- Pokud jakykoli test selze kvuli importu, MUSIM opravit import logic
+- Tester znovu spusti testy po oprave
+- Commit se kona POUZE pokud VSECHNY testy projdou

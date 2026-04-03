@@ -92,3 +92,10 @@ Musí poskytovat:
 
 ## Konfigurace připojení
 Načítat z `config/local.neon` (nikdy hardcoded credentials).
+
+## POVINNÉ: Test-before-commit
+- Po KAŽDÉ implementaci (nová funkce, oprava, refactoring) musí Tester agent spustit VŠECHNY testy
+- Pokud jakýkoli test selže kvůli mojí změně, MUSÍM opravit kód
+- Tester znovu spustí testy po opravě
+- Commit se koná POUZE pokud VŠECHNY testy projdou
+- Nikdy neoznačovat práci jako dokončenou bez úspěšných testů
