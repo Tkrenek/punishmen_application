@@ -52,12 +52,40 @@ class PenaltyPresenter extends BasePresenter
         $this->template->total        = $total;
         $this->template->pageSize     = $pageSize;
         $this->template->totalAmount  = $this->penalties->sumFiltered($filters);
+        $unpaidFilters = array_merge($filters, ['is_paid' => '0']);
+        $this->template->unpaidCount  = $this->penalties->findFiltered($unpaidFilters)->count('*');
     }
 
     public function renderAdd(): void
     {
         $this->template->users        = $this->users->findActive();
         $this->template->penaltyTypes = $this->penaltyTypes->findActive();
+    }
+
+    public function actionMarkAllPaid(
+        ?string $user_id = null,
+        ?string $penalty_type_id = null,
+        ?string $is_paid = null,
+        ?string $date_from = null,
+        ?string $date_to = null,
+    ): void {
+        $filters = [
+            'user_id'         => ($user_id !== null && $user_id !== '') ? (int) $user_id : null,
+            'penalty_type_id' => ($penalty_type_id !== null && $penalty_type_id !== '') ? (int) $penalty_type_id : null,
+            'is_paid'         => ($is_paid !== null && $is_paid !== '') ? $is_paid : null,
+            'date_from'       => ($date_from !== null && $date_from !== '') ? $date_from : null,
+            'date_to'         => ($date_to !== null && $date_to !== '') ? $date_to : null,
+        ];
+
+        $count = $this->penalties->markAllPaidFiltered($filters);
+        $this->flashMessage("Označeno jako zaplaceno: $count pokut.", 'success');
+        $this->redirect('default', [
+            'user_id'         => $user_id,
+            'penalty_type_id' => $penalty_type_id,
+            'is_paid'         => $is_paid,
+            'date_from'       => $date_from,
+            'date_to'         => $date_to,
+        ]);
     }
 
     public function actionMarkPaid(int $id): void

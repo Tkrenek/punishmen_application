@@ -112,6 +112,35 @@ class PenaltyViewTest extends \Tests\DbTestCase
         Assert::true($unpaidSum >= 999.0);
         Assert::true($paidSum !== $unpaidSum);
     }
+
+
+    /** markAllPaidFiltered oznaci vsechny nezaplacene ve filtru jako zaplacene. */
+    public function testMarkAllPaidFiltered_marksOnlyUnpaid(): void
+    {
+        $p1 = $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 20.0, 'penalty_date' => '2025-11-01', 'is_paid' => 0]);
+        $p2 = $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 20.0, 'penalty_date' => '2025-11-02', 'is_paid' => 0]);
+        $p3 = $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 20.0, 'penalty_date' => '2025-11-03', 'is_paid' => 1]);
+
+        $count = $this->penalties->markAllPaidFiltered(['user_id' => $this->userId]);
+        Assert::true($count >= 2, "Melo byt oznaceno aspon 2 zaznamy, bylo: $count");
+
+        $row1 = $this->penalties->findById((int) $p1->id);
+        $row2 = $this->penalties->findById((int) $p2->id);
+        $row3 = $this->penalties->findById((int) $p3->id);
+        Assert::equal(1, (int) $row1->is_paid);
+        Assert::equal(1, (int) $row2->is_paid);
+        Assert::equal(1, (int) $row3->is_paid); // uz bylo zaplaceno, stale 1
+    }
+
+    /** markAllPaidFiltered s is_paid filtrem oznaci jen nezaplacene. */
+    public function testMarkAllPaidFiltered_withIsUnpaidFilter(): void
+    {
+        $p = $this->penalties->insert(['user_id' => $this->userId, 'penalty_type_id' => $this->typeId, 'amount' => 20.0, 'penalty_date' => '2025-11-10', 'is_paid' => 0]);
+        $count = $this->penalties->markAllPaidFiltered(['user_id' => $this->userId, 'is_paid' => null]);
+        Assert::true($count >= 1);
+        $row = $this->penalties->findById((int) $p->id);
+        Assert::equal(1, (int) $row->is_paid);
+    }
 }
 
 (new PenaltyViewTest())->run();

@@ -102,6 +102,14 @@ class PenaltyRepository
         $this->update($id, ['is_paid' => 0]);
     }
 
+    /** Oznaci vsechny nezaplacene pokuty splnujici filtry jako zaplacene. Vrati pocet aktualizovanych zaznamu. */
+    public function markAllPaidFiltered(array $filters): int
+    {
+        $query = $this->findFiltered($filters);
+        $query->where('is_paid', 0);
+        return (int) $query->update(['is_paid' => 1]);
+    }
+
     public function getPageSize(): int
     {
         return self::DEFAULT_PAGE_SIZE;
