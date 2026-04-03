@@ -88,7 +88,14 @@ class PenaltyPresenter extends BasePresenter
         ]);
     }
 
-    public function actionMarkPaid(int $id): void
+    public function actionMarkPaid(
+        int $id,
+        ?string $user_id = null,
+        ?string $penalty_type_id = null,
+        ?string $is_paid = null,
+        ?string $date_from = null,
+        ?string $date_to = null,
+    ): void
     {
         $penalty = $this->penalties->findById($id);
         if (!$penalty) {
@@ -96,10 +103,17 @@ class PenaltyPresenter extends BasePresenter
         }
         $this->penalties->markAsPaid($id);
         $this->flashMessage('Pokuta označena jako zaplacená.', 'success');
-        $this->redirect('default');
+        $this->redirect('default', ['user_id' => $user_id, 'penalty_type_id' => $penalty_type_id, 'is_paid' => $is_paid, 'date_from' => $date_from, 'date_to' => $date_to]);
     }
 
-    public function actionMarkUnpaid(int $id): void
+    public function actionMarkUnpaid(
+        int $id,
+        ?string $user_id = null,
+        ?string $penalty_type_id = null,
+        ?string $is_paid = null,
+        ?string $date_from = null,
+        ?string $date_to = null,
+    ): void
     {
         $penalty = $this->penalties->findById($id);
         if (!$penalty) {
@@ -107,7 +121,7 @@ class PenaltyPresenter extends BasePresenter
         }
         $this->penalties->markAsUnpaid($id);
         $this->flashMessage('Pokuta označena jako nezaplacená.', 'info');
-        $this->redirect('default');
+        $this->redirect('default', ['user_id' => $user_id, 'penalty_type_id' => $penalty_type_id, 'is_paid' => $is_paid, 'date_from' => $date_from, 'date_to' => $date_to]);
     }
 
     public function actionDelete(int $id): void
